@@ -20,12 +20,15 @@ from gpiozero import Button, LED
 # initialize PyGame mixer
 pygame.mixer.init()
 
+# set GPIO pins
 led = LED(17)
 button = Button(27)
 
 # load audio file (mp3 or ogg)
 pygame.mixer.music.load('drum_roll.ogg')
 
+# loop forever until canceled, otherwise
+# program will end once the audio does
 while True:
     button.wait_for_press()
 
