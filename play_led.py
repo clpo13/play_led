@@ -41,9 +41,9 @@ while True:
     pygame.mixer.music.play()
     led.on()
 
-    # check if audio is still playing
+    # check if audio is still playing and wait for it to finish
     while pygame.mixer.music.get_busy() == True:
-        continue
+        pygame.time.wait(100)
 
     # audio done, turn led off
     led.off()
