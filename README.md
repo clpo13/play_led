@@ -16,7 +16,7 @@ Keep an LED lit while playing a sound. When the user presses a button, an audio 
 
 ## Software
 
-- Python 3 and gpiozero (both preinstalled in Raspbian)
+- Python 3, GPIO Zero, and PyGame (all preinstalled in Raspbian)
 
 # Set up and run
 
