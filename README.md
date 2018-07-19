@@ -35,6 +35,8 @@ Make sure `play_led.py` is executable (`chmod a+x play_led.py`) and run it with 
 
 # License
 
-This project is licensed according to the terms of the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.en.html) (GPLv3).
+This project's source code, `play_led.py`, and documentation, `README.md` (this file), are licensed according to the terms of the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.en.html) (GPLv3).
 
-The included sound file, `drum_roll.ogg`, has been released into the public domain under the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). The original file, in AIFF format, can be found at [freesound.org](https://freesound.org/people/Heigh-hoo/sounds/19433). This version of the file was copied from the [Sonic Pi](https://sonic-pi.net/) distribution [samples folder](https://github.com/samaaron/sonic-pi/tree/master/etc/samples) and converted from FLAC to OGG.
+The included sound file, `drum_roll.ogg`, has been released into the public domain under the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) (CC0 1.0). The original file, in AIFF format, can be found at [freesound.org](https://freesound.org/people/Heigh-hoo/sounds/19433). This version of the file was copied from the [Sonic Pi](https://sonic-pi.net/) distribution [samples folder](https://github.com/samaaron/sonic-pi/tree/master/etc/samples) and converted from FLAC to OGG.
+
+The breadboard diagram, `play_led_bb.png`, was created with [Fritzing](http://fritzing.org/) and is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0).
