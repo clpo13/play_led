@@ -14,18 +14,23 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-import pygame
+import pygame, sys
 from gpiozero import Button, LED
 
 # initialize PyGame mixer
 pygame.mixer.init()
 
+# take command line input if present
+led_gpio = int(sys.argv[1]) if len(sys.argv) >= 2 else 17
+btn_gpio = int(sys.argv[2]) if len(sys.argv) >= 3 else 27
+snd_file = sys.argv[3] if len(sys.argv) >= 4 else 'drum_roll.ogg'
+
 # set GPIO pins
-led = LED(17)
-button = Button(27)
+led = LED(led_gpio)
+button = Button(btn_gpio)
 
 # load audio file (mp3 or ogg)
-pygame.mixer.music.load('drum_roll.ogg')
+pygame.mixer.music.load(snd_file)
 
 # loop forever until canceled, otherwise
 # program will end once the audio does
